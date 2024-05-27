@@ -24,6 +24,7 @@ typescriptフレームワークHonoを使ったBlogのApiを作成。
 ```
 
 一旦開発やめてcloudflare D1の使い方勉強する必要あり。ちなみにローカル環境でwrangler d1 execute blog --local --command='SELECT * FROM Blogs;'とやるとDBはできてるっぽい。
+.tomlとblogs.tsで指しているDBの名称が異なっていたため修正したがそれでも結果変わらす。
 
 ```
 npm install
