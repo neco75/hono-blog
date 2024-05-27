@@ -1,5 +1,6 @@
 name = "hono-blog"
 compatibility_date = "2023-12-01"
+main = "src/index.ts"
 
 # [vars]
 # MY_VAR = "my-variable"
@@ -12,10 +13,10 @@ compatibility_date = "2023-12-01"
 # binding = "MY_BUCKET"
 # bucket_name = "my-bucket"
 
-# [[d1_databases]]
-# binding = "DB"
-# database_name = "my-database"
-# database_id = ""
+[[d1_databases]]
+binding = "DB" # i.e. available in your Worker on env.DB
+database_name = "blog"
+database_id = "9e995c9e-c2f3-498e-b416-9506f958da7b"
 
 # [ai]
 # binding = "AI"
