@@ -1,22 +1,9 @@
 name = "hono-blog"
-compatibility_date = "2023-12-01"
 main = "src/index.ts"
+compatibility_date = "2023-12-01"
 
-# [vars]
-# MY_VAR = "my-variable"
-
-# [[kv_namespaces]]
-# binding = "MY_KV_NAMESPACE"
-# id = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
-
-# [[r2_buckets]]
-# binding = "MY_BUCKET"
-# bucket_name = "my-bucket"
 
 [[d1_databases]]
 binding = "DB" # i.e. available in your Worker on env.DB
-database_name = "blog"
-database_id = "9e995c9e-c2f3-498e-b416-9506f958da7b"
-
-# [ai]
-# binding = "AI"
+database_name = "blog-api"
+database_id = "d1826c5b-43db-4e4e-b1e1-98681795dde1"

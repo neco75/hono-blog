@@ -1,6 +1,8 @@
 typescriptフレームワークHonoを使ったBlogのApiを作成。
 
 開発メモ
+
+2024/5/27
 お試しとして配列でブログ内容を管理していたところを、cloudflare D1を使用して管理できるようにコードを書き換えている。ただ、APIが正常なレスポンスしなくなった。悲しい。以下エラー。
 
 ```
@@ -25,6 +27,9 @@ typescriptフレームワークHonoを使ったBlogのApiを作成。
 
 一旦開発やめてcloudflare D1の使い方勉強する必要あり。ちなみにローカル環境でwrangler d1 execute blog --local --command='SELECT * FROM Blogs;'とやるとDBはできてるっぽい。
 .tomlとblogs.tsで指しているDBの名称が異なっていたため修正したがそれでも結果変わらす。
+
+2024/5/28
+テーブル名間違ってただけだった…とりあえずDBを使用した基本的なCRUD操作が実装できた。
 
 ```
 npm install

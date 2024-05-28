@@ -5,7 +5,7 @@ const app = new Hono()
 app.route('/posts', posts);
 
 app.get('/', (c) => {
-  return c.text('neco-blog-api')
+  return c.json({ message: 'Welcome to Hono' })
 })
 
-export default app
+export default app;
