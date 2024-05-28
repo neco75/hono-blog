@@ -3,16 +3,6 @@ import { cors } from 'hono/cors'
 
 const app = new Hono<{ Bindings: Bindings }>();
 
-type Post = {
-    id: string
-    title: string
-    content: string
-    eyeCatch: string
-    category: string
-    createdAt: string
-    updatedAt: string
-  }
-
 // CORS
 app.use(cors())
 
