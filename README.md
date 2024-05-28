@@ -1,4 +1,4 @@
-typescriptフレームワークHonoを使ったBlogのApiを作成。
+typescriptフレームワークHonoを使ったBlogのApiを作成。DBはCloudflare Workers D1を使用。
 
 開発メモ
 
